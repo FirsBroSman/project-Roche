@@ -1,0 +1,426 @@
+@font-face {
+  font-family: PT Mono-c;
+  src: url(../../public/fonts/PTMono.ttc) format("truetype");
+}
+@font-face {
+  font-family: Gento-c;
+  src: url(../../public/fonts/GENTO\ DREAM.ttf) format("truetype");
+}
+:root {
+  --index: calc(1vw+1vh);
+  --color-header-txt: #c22727;
+  --color-adress: #290b0b;
+  --color-number: #2f0a0a;
+  --color-gento: #b51b1b;
+  --color-basic-txt: #000000;
+  --color-footer-txt: #b04a4a;
+  --color-footer-landings: #c22727;
+  /* --font-size-small: clamp(0.625rem, 0.575rem + 0.25vw, 0.875rem);
+  --font-size-large: clamp(0.875rem, 0.825rem + 0.25vw, 1.125rem);
+  --gento-size: clamp(3.125rem, 2.5rem + 3.13vw, 6.25rem); */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #f0eedb;
+  font-family: PT Mono-c;
+}
+
+.content,
+.gento-dream-description,
+.asian-woman-and-watermark,
+.group-of-woman {
+  will-change: transform;
+}
+
+.flex-container {
+  width: 1920px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+header,
+main,
+footer {
+  width: 100%;
+}
+
+.header-discription {
+  color: var(--color-header-txt);
+  font-size: 14px;
+  letter-spacing: 0.035em;
+  margin-top: 5.6vh;
+  text-align: center;
+}
+.adress {
+  color: var(--color-adress);
+}
+
+.number {
+  color: var(--color-number);
+}
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 38vh;
+}
+.logo-header {
+  width: calc(var(--index) * 9.47);
+  margin-top: 37.2vh;
+  margin-right: 3vh;
+}
+
+.madame-roche {
+  width: var(--auto-size);
+  padding-left: 41vh;
+  padding-top: 2.5vh;
+  transform: rotate(-5deg);
+}
+main {
+  position: relative;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.gento-dream-description {
+  font-family: Gento-c;
+  font-size: 100px;
+  font-weight: lighter;
+  line-height: 1.3;
+  letter-spacing: 0.2rem;
+  word-spacing: -0.1rem;
+  text-align: center;
+  color: var(--color-gento);
+  z-index: 1;
+  white-space: nowrap;
+  margin-top: 17.9vh;
+  position: relative;
+}
+.gento-dream-description::before {
+  content: "";
+  position: absolute;
+  width: 10em;
+  height: 10em;
+  background: url("/client/public/sprite/Combined\ Shape.svg") no-repeat center
+    center;
+  background-size: contain;
+  top: 69%;
+  left: 84.7%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.main-description-brothel {
+  color: var(--color-basic-txt);
+  font-size: 18px;
+  font-family: PT Mono-c;
+  line-height: 4.1vh;
+  transform: scaleY(1, 9);
+  padding-top: 24.6vh;
+}
+.main-description-transformation {
+  color: var(--color-basic-txt);
+  font-size: 18px;
+  font-family: PT Mono-c;
+  line-height: 4.1vh;
+  transform: scaleY(1, 9);
+  padding-top: 4vh;
+}
+.asian-woman-and-watermark {
+  width: calc(var(--index) * 12.4);
+  margin-top: 19.3vh;
+  margin-left: 1.6vh;
+}
+.main-description-party {
+  color: var(--color-basic-txt);
+  font-size: 18px;
+  font-family: PT Mono-c;
+  line-height: 4.1vh;
+  transform: scaleY(1, 9);
+  padding-top: 9.7vh;
+}
+.group-of-woman {
+  width: calc(var(--index) * 35.93);
+  margin-top: 39vh;
+  margin-left: 25vh;
+}
+.main-description-menu {
+  color: var(--color-basic-txt);
+  font-size: 18px;
+  font-family: PT Mono-c;
+  line-height: 4.09vh;
+  transform: scaleY(1, 9);
+  padding-top: 19vh;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.logo-footer {
+  margin-top: 46.3vh;
+  margin-right: 2.2vh;
+}
+.footer-description {
+  color: #b04a4a;
+  font-size: 18px;
+  font-family: PT Mono-c;
+  line-height: 4.1vh;
+  transform: scaleY(1, 9);
+  padding-top: 6.4rem;
+}
+.footer-landings {
+  font-size: 14px;
+  color: #c22727;
+  word-spacing: 0.4em;
+  padding-top: 7.4vh;
+}
+
+@media (min-width: 1920px) {
+}
+@media (min-width: 1279px) and (max-width: 1919px) {
+  .flex-container {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+  }
+  footer {
+    padding-bottom: 8%;
+  }
+}
+@media (min-width: 1366px) and (max-width: 1439px) {
+  .flex-container {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+  }
+  .header-discription,
+  .footer-description,
+  .footer-landings {
+    font-size: 13px;
+  }
+  .main-description-brothel,
+  .main-description-transformation,
+  .main-description-party,
+  .main-description-menu {
+    font-size: 17px;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1365px) {
+  .flex-container {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+  }
+  footer {
+    padding-bottom: 8%;
+  }
+  .main-description-party {
+    padding-bottom: 20%;
+  }
+  .group-of-woman {
+    padding-left: 5%;
+    margin: 0 auto;
+  }
+  .header-discription,
+  .footer-description,
+  .footer-landings {
+    font-size: 13px;
+  }
+  .main-description-brothel,
+  .main-description-transformation,
+  .main-description-party,
+  .main-description-menu {
+    font-size: 17px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .flex-container {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+  }
+  .logo-header {
+    padding-left: 5%;
+  }
+  .madame-roche {
+    padding-left: 21.5%;
+    margin: 0 auto;
+  }
+  .group-of-woman {
+    padding-left: 2%;
+    margin: 0 auto;
+  }
+  .logo-footer {
+    padding-left: 3%;
+  }
+  .header-discription,
+  .footer-description,
+  .footer-landings {
+    font-size: 12px;
+  }
+  .main-description-brothel,
+  .main-description-transformation,
+  .main-description-party,
+  .main-description-menu {
+    font-size: 13px;
+    line-height: 1.8;
+  }
+  .main-description-party {
+    padding-bottom: 20%;
+  }
+  footer {
+    padding-bottom: 8%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .flex-container {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+  }
+  .logo-header {
+    padding-left: 5%;
+  }
+  .madame-roche {
+    margin: 0%;
+    padding-right: 33%;
+  }
+  .group-of-woman {
+    padding-right: 23%;
+  }
+  .logo-footer {
+    padding-left: 3%;
+  }
+  .header-discription,
+  .footer-description,
+  .footer-landings {
+    font-size: 11px;
+  }
+  .main-description-brothel,
+  .main-description-transformation,
+  .main-description-party,
+  .main-description-menu {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .gento-dream-description {
+    font-size: 80px;
+  }
+  footer {
+    padding-bottom: 8%;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .flex-container {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+  }
+  .logo-header {
+    width: 50%;
+    padding-left: 5%;
+  }
+  .madame-roche {
+    width: 185%;
+    padding-right: 33.3%;
+  }
+  .gento-dream-description {
+    font-size: 55px;
+  }
+  .header-discription,
+  .footer-description,
+  .footer-landings {
+    font-size: 11px;
+  }
+  .main-description-brothel,
+  .main-description-transformation,
+  .main-description-party,
+  .main-description-menu {
+    line-height: 1.6;
+    font-size: 13px;
+  }
+  .group-of-woman {
+    width: 165%;
+    padding-right: 23%;
+  }
+  .logo-footer {
+    width: 30%;
+    padding-left: 3%;
+  }
+  footer {
+    padding-bottom: 8%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .flex-container {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+  }
+  .flex-container {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+  }
+  .logo-header {
+    width: 50%;
+    padding-left: 10%;
+  }
+  .madame-roche {
+    width: 125%;
+    padding-left: 10%;
+    margin: 0 auto;
+  }
+  .asian-woman-and-watermark {
+    width: 65%;
+  }
+  .group-of-woman {
+    width: 215%;
+    padding-right: 50%;
+  }
+  .logo-footer {
+    width: 33%;
+    padding-left: 3%;
+  }
+  .header-discription,
+  .footer-description,
+  .footer-landings {
+    font-size: 11px;
+  }
+  .gento-dream-description {
+    font-size: 40px;
+  }
+  .main-description-brothel,
+  .main-description-transformation,
+  .main-description-party,
+  .main-description-menu {
+    font-size: 13px;
+    line-height: 3.09vh;
+  }
+  footer {
+    padding-bottom: 8%;
+  }
+}
