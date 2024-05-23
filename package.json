@@ -1,15 +1,14 @@
 {
   "name": "roche",
-  "version": "1.0.0",
-  "description": "",
-  "main": "test.js",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "node interactive.js"
+    "dev": "vite",
+    "build": "vite build --emptyOutDir",
+    "preview": "vite preview"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "gsap": "^3.12.5"
+  "devDependencies": {
+    "vite": "^5.2.11"
   }
 }

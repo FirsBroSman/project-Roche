@@ -1,13 +1,13 @@
 @font-face {
   font-family: PT Mono-c;
-  src: url(../../public/fonts/PTMono.ttc) format("truetype");
+  src: url(fonts/PTMono.ttc) format("truetype");
 }
 @font-face {
   font-family: Gento-c;
-  src: url(../../public/fonts/GENTO\ DREAM.ttf) format("truetype");
+  src: url(fonts/GENTO\ DREAM.ttf) format("truetype");
 }
 :root {
-  --index: calc(1vw+1vh);
+  --index: calc(1vw + 1vh);
   --color-header-txt: #c22727;
   --color-adress: #290b0b;
   --color-number: #2f0a0a;
@@ -118,8 +118,7 @@ main {
   position: absolute;
   width: 10em;
   height: 10em;
-  background: url("/client/public/sprite/Combined\ Shape.svg") no-repeat center
-    center;
+  background: url("sprite/Combined\ Shape.svg") no-repeat center center;
   background-size: contain;
   top: 69%;
   left: 84.7%;

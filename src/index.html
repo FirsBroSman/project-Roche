@@ -1,18 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Document</title>
-
-  <script src="/client/public/libs/gsap.min.js" defer></script>
-  <script src="/client/public/libs/ScrollTrigger.min.js" defer></script>
-  <script src="/client/public/libs/ScrollSmoother.min.js" defer></script>
-
-  <script src="functionality/interactive.js" defer></script>
-  <link rel="stylesheet" href="/client/src/styles/page-info-style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css">
+  <title>Roche</title>
 </head>
 
 <body>
@@ -28,8 +21,8 @@
             каждый из них
             попадал в тайную команту…</p>
           <section class="header-content">
-            <img class="logo-header" src="../public/sprite/Logo_header.svg" alt="Logo Header">
-            <img class="madame-roche" src="../public/sprite/Madame_Roche.svg" alt="Madame Roche">
+            <img class="logo-header" src="sprite/Logo_header.svg" alt="Logo Header">
+            <img class="madame-roche" src="sprite/Madame_Roche.svg" alt="Madame Roche">
           </section>
         </header>
         <main>
@@ -56,16 +49,15 @@
               культуры
               <br>высокой кухни.
             </p>
-            <img class="asian-woman-and-watermark" src="..//public/sprite/asianWoman&watermark.svg"
-              alt="Asian Woman & Watermark" data-speed="0.9">
+            <img class="asian-woman-and-watermark" src="sprite/asianWoman&watermark.svg" alt="Asian Woman & Watermark"
+              data-speed="0.9">
             <p class="main-description-party">Бурное прошлое наложило на ее
               дом-<br>ресторан
               некоторые особенности: она<br> всегда
               не против как следует
               выпить и <br>станцевать с гостями под лучшую <br>эклектичную музыку со всего света.
             </p>
-            <img class="group-of-woman" src="../public/sprite/groupOfWoman&playbill.svg" alt="Group Of Woman"
-              data-speed="0.9">
+            <img class="group-of-woman" src="sprite/groupOfWoman&playbill.svg" alt="Group Of Woman" data-speed="0.9">
             <p class="main-description-menu">Основное меню представлено актуальным и
               <br>авторским comfort-food, построенным на
               <br>захватывающих вкусовых
@@ -75,7 +67,7 @@
         </main>
         <footer>
           <section class="footer-content">
-            <img class="logo-footer" src="../public/sprite/Logo_footer.svg" alt="Logo Footer">
+            <img class="logo-footer" src="sprite/Logo_footer.svg" alt="Logo Footer">
             <p class="footer-description">Основное меню представлено актуальным <br>и авторским comfort-food</p>
             <p class="footer-landings">Telegram Whatsapp</p>
           </section>
@@ -83,6 +75,10 @@
       </div>
     </div>
   </div>
+  <script src="libs/gsap.min.js"></script>
+  <script src="libs/ScrollTrigger.min.js"></script>
+  <script src="libs/ScrollSmoother.min.js"></script>
+  <script type="module" src="/main.js"></script>
 </body>
 
 </html>
